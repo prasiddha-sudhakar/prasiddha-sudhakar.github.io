@@ -1,0 +1,74 @@
+.fa-igloo{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+a{
+  color: black;
+}
+
+a:hover{
+  color: grey;
+}
+
+body{
+  background-color: #f4dada;
+  font-family: 'Indie Flower', cursive;
+  /* color: #f9989f; */
+}
+
+.descrips{
+  margin: 35px 30px;
+}
+
+h3{
+  text-decoration: underline;
+}
+
+p{
+  font-size: 20px;
+}
+
+h1{
+  margin-top: 50px;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #b8b2a6;
+  height: 9%;
+  margin: 0 auto;
+}
+
+footer .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+footer .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 2px;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.copyright{
+  font-size: 18px;
+ font-weight: bold;
+ margin: 0 0 10px;
+ padding: 18px;
+ transition: ease .25s;
+ text-align: center;
+}
