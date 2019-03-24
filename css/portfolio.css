@@ -1,0 +1,135 @@
+.fa-igloo{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+a{
+  color: black;
+}
+
+a:hover{
+  color: grey;
+}
+
+body{
+  background-color: #f4dada;
+  font-family: 'Indie Flower', cursive;
+  /* color: #f9989f; */
+}
+
+h1{
+  margin-top: 50px;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+p{
+  margin: 0 30px;
+  margin-top: 35px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.card-banner {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    background-size: cover;
+    border-radius: 5px;
+}
+.card-banner .card-body {
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+}
+
+/* overlay effects */
+.overlay-cover {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+.overlay {
+    background-color: rgba(0,0,0,0.65);
+    z-index: 10;
+    padding: 1.25rem;
+    color: #fff;
+}
+.overlay-grad {
+    position: relative;
+}
+
+.overlay-grad::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #defcfc;
+    background: -webkit-gradient(linear, left top, right bottom, from(#007bff), to(#e83e8c));
+    background: linear-gradient(to bottom right, #defcfc, #cbf1f5);
+    opacity: .6;
+    transition: .5s;
+}
+.overlay-grad:hover:before{
+     opacity: .9;
+}
+
+.col-sm-4{
+  text-align: center;
+  color: #33313b;
+}
+
+.card-title{
+  margin: 2%;
+  font-size: 30px;
+}
+
+.performanceVid{
+  margin-top: 10px;
+}
+
+footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #b8b2a6;
+  height: 9%;
+  margin: 0 auto;
+}
+
+footer .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+footer .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 2px;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.copyright{
+  font-size: 18px;
+ font-weight: bold;
+ margin: 0 0 10px;
+ padding: 18px;
+ transition: ease .25s;
+ text-align: center;
+}
