@@ -21,7 +21,11 @@ body{
   margin: 35px 30px;
 }
 
-h3{
+h3, h4{
+  text-decoration: underline;
+}
+
+a{
   text-decoration: underline;
 }
 
@@ -34,6 +38,10 @@ h1{
   text-align: center;
   text-decoration: underline;
   font-weight: bold;
+}
+
+.voxVid{
+  margin-bottom: 5%;
 }
 
 footer{
