@@ -3,164 +3,831 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Prasiddha Sudhakar's Website</title>
+  <title>Prasiddha Sudhakar's Personal Website</title>
+
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
-
-  <!-- Importing the Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="\images\apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="\images\favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="\images\favicon-16x16.png">
-<link rel="manifest" href="\images\site.webmanifest">
-<link rel='shortcut icon' type='image/x-icon' href='\images\favicon.ico' />
+  <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
   <!-- Importing the Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="images\apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images\favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images\favicon-16x16.png">
-<link rel="manifest" href="\images\site.webmanifest">
-<link rel='shortcut icon' type='image/x-icon' href='images\favicon.ico' />
+  <link rel="icon" type="image/png" sizes="32x32" href="images\favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images\favicon-16x16.png">
+  <link rel="manifest" href="\images\site.webmanifest">
+  <link rel='shortcut icon' type='image/x-icon' href='images\favicon.ico' />
 
+  <!-- Importing the Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images\apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images\favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images\favicon-16x16.png">
+  <link rel="manifest" href="\images\site.webmanifest">
+  <link rel='shortcut icon' type='image/x-icon' href='images\favicon.ico' />
 </head>
 
-<body>
 
-  <section id="section10" class="demo">
+<body data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+
+  <nav id="navbar-example2" class="navbar fixed-top">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#education">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link edu-link" href="#experience">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#interests">Interests</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- <nav class="navbar fixed-top"> -->
+  <!-- Links -->
+  <!-- <div class="row col-md-12 navigationList">
+        <div class="col-md-4">
+          <div class="list-group" id="ListScrollSpy">
+            <a class="list-group-item list-group-item-action" href="#about">About</a>
+            <a class="list-group-item list-group-item-action" href="#education">Education</a>
+            <a class="list-group-item list-group-item-action" href="#experience">Experience</a>
+            <a class="list-group-item list-group-item-action" href="#skills">Skills</a>
+            <a class="list-group-item list-group-item-action" href="#projects">Projects</a>
+            <a class="list-group-item list-group-item-action" href="#interests">Interests</a>
+          </div>
+        </div>
+      </div>
+  </nav> -->
+
+  <!-- <div data-spy="scroll" data-target="#ListScrollSpy" data-offset="0"> -->
+  <!-- Starting screen with Video -->
+
+  <section id="homeVideo" class="homeVideo">
+
+    <div id="loading">
+      <video id="bgvideo" autoplay muted loop>
+        <source src="./videos/CoverVideo.mp4" type=video/webm> </video> </div>
 
     <div class="typewriter">
-      <h1>Prasiddha Sudhakar's Website</h1>
-    </div>
-    <div id="video-player" class="fullscreen-bg"><video class="fullscreen-bg__video" autoplay muted loop>
-        <source src="videos\Video.MOV" type="video/mp4"></video></div>
-
-    <div class="jobdescrip container-fluid">
-      <div class="row">
-        <div class="career col-sm-2">
-          <button type="button" class="btn btn-light btn-lg disabled"><b>Engineer</b></button>
-        </div>
-        <div class="career col-sm-2">
-          <button type="button" class="btn btn-light btn-lg disabled"><b>Economist</b></button>
-        </div>
-        <div class="career col-sm-2">
-          <button type="button" class="btn btn-light btn-lg disabled"><b>Philosopher</b></button>
-        </div>
-      </div>
+        <h1>Prasiddha Sudhakar's Website</h1>
     </div>
 
-    <a href="#aboutme"><span></span>Find Out More</a>
+    <div class="row">
+      <a href="#about"><span></span></a>
+    </div>
+
   </section>
 
-  <section id="aboutme">
+  <!-- About -->
+  <section id="about" class="about">
 
-    <h2>Welcome to my website</h2>
-    <p>I'm Prasiddha, a Computer Science and Economics student. I'm extremely passionate about the intersection between STEM and humanities. Outside of the classroom, I'm passionate about learning languages, travelling and having philosophical discussions. Feel free to contact me if you would like to have a chat!</p>
+    <div class="sectionContent">
 
-    <div class="container">
-
-      <div class="row">
-
-        <aside class="col-sm-4">
-          <div class="card-banner  overlay-grad" style="height:210px;">
-            <div class="card-body">
-              <a href="educationPage.html">
-                <h5 class="card-title">Education</h5>
-                <i class="fas fa-university fa-lg"></i>
-              </a>
-            </div>
-          </div> <!-- card.// -->
-        </aside>
-
-        <aside class="col-sm-4">
-          <div class="card-banner  overlay-grad" style="height:210px;">
-            <div class="card-body">
-              <a href="experiencesPage.html">
-                <h5 class="card-title">Experiences</h5>
-                <i class="fas fa-network-wired fa-lg"></i>
-              </a>
-            </div>
-          </div> <!-- card.// -->
-        </aside>
-
-        <aside class="col-sm-4">
-          <div class="card-banner  overlay-grad" style="height:210px;">
-            <div class="card-body">
-              <a href="researchPage.html">
-                <h5 class="card-title">Research</h5>
-                <i class="fas fa-search fa-lg"></i>
-              </a>
-            </div>
-          </div> <!-- card.// -->
-        </aside>
-
-      </div>
+      <h1 class="sectionTitle">About</h1>
 
       <hr>
+      <h2 class="quote"><i>"An education is meaningless unless one decides to do something impactful with it"</i></h2>
+      <hr>
 
-      <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="prasDescrip">
 
-        <aside class="col-sm-4">
-          <div class="card-banner  overlay-grad" style="height:210px;">
-            <div class="card-body">
-              <a href="portfolioPage.html">
-                <h5 class="card-title">Portfolio</h5>
-                <i class="fab fa-artstation fa-lg"></i>
-              </a>
+              <p>I'm a student at Rutgers University, double majoring in Computer Science and Economics. I'm passionate about the intersections
+                between technology and international economic development, with an emphasis on education policy and bridging the digital divide.
+                I have lived in 6 different countries throughout my life. Having international exposure has sparked my passions for technology,
+                economics and geopolitics. </p>
+
+              <p>Over summer, I worked as a Software Engineering Intern at the U.S. Department of Health and Human Services, working in the Centers for Medicare and Medicaid Services. This was a part of the <a href="https://blog.codingitforward.com/meet-the-2020-fellows-health-and-human-services-3bed4baac733">Civic Digital Fellowship at Coding it Forward.</a> In addition, I am a <a href="https://rewritingthecode.org/fellowship/">Rewriting the Code Fellow</a>,
+                <a href="https://lsamp-nb.rutgers.edu/">LSAMP Scholar</a> and a <a href="https://plen.org/2020/08/12/aarushi-govil/">PLEN Women in STEM Policy Scholarship recipient.</a></p>
+
+              <p>In the past, I have interned at <a href="https://take-pause.com/">Take-Pause</a>, a VR start-up aimed to decrease anxiety in paediatrics. On campus, I am the <a href="https://www.hindustudentscouncil.org/2020/03/01/hinduism-and-sustainability/">External President of the Rutgers Hindu Students Council</a>, <a href="https://climatechange.rutgers.edu/images/RCISymposium2019/parkerdherrera_5dd4a5157922d.pdf">Research Assistant at Rutgers SEBS</a> and served as an Assistant Director in the <a href="http://modelun.com/rumun/page/3/">Institute of Domestic & International Affairs.</a> Additionally, I am a mentor for women in STEM through the Rewriting the Code program.</p>
+
+              <p>I aim to pursue a career in Civic Technology. Let's <a href="https://www.linkedin.com/in/prasiddha-sudhakar/">connect!</a></p>
             </div>
-          </div> <!-- card.// -->
-        </aside>
+          </div>
 
-        <aside class="col-sm-4">
-          <div class="card-banner  overlay-grad" style="height:210px;">
-            <div class="card-body">
-              <a href="projectsPage.html">
-                <h5 class="card-title">Projects</h5>
-                <i class="fas fa-tasks fa-lg"></i>
-              </a>
-            </div>
-          </div> <!-- card.// -->
-        </aside>
+          <div class="col">
 
-        <aside class="col-sm-4">
-          <div class="card-banner  overlay-grad" style="height:210px;">
-            <div class="card-body">
-              <a href="interestsPage.html">
-                <h5 class="card-title">Interests</h5>
-                <i class="fas fa-brain fa-lg"></i>
-              </a>
+            <div class="prasImage">
+              <img src=".\images\sari.jpg" alt="">
             </div>
-          </div> <!-- card.// -->
-        </aside>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="education">
+
+    <div class="sectionContent">
+
+      <h1 class="sectionTitle">Education</h1>
+
+      <hr class="titleHr">
+
+      <div class="row education-row">
+        <div class="education-box col-lg-6">
+          <img class="edu-icon" src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/Rutgers_University_seal.svg/1200px-Rutgers_University_seal.svg.png" alt="">
+          <h3 class="edu-sch-title">Rutgers University</h3>
+          <p class="education-info">B.A <b>Economics</b> and B.S <b>Computer Science</b></p>
+          <a href="myCoursework.html"><button type="button" class="btn btn-danger coursework">My Coursework</button></a>
+          <p class="education-info-2 edu-period">2018 - 2022</p>
+        </div>
+        <div class="education-box col-lg-6">
+          <img class="edu-icon" src="https://upload.wikimedia.org/wikipedia/en/4/46/DGS_Organization_logo.png" alt="">
+          <h3 class="edu-sch-title">Dartford Grammar School</h3>
+          <p class="education-info">International Baccalaureate Diploma</p>
+          <p class="education-info-2">HL: Computer Science, Economics, French.<br>SL: Mathematics, English Literature, Physics.</p>
+          <p class="education-info-2 edu-period">2016 - 2018</p>
+        </div>
+      </div>
+      <div class="row education-row">
+        <div class="education-box col-lg-6">
+          <img class="edu-icon" src="./images/dwightLogo.png" alt="">
+          <h3 class="edu-sch-title">Dwight School London</h3>
+          <p class="education-info">International Middle Years Program</p>
+          <p class="education-info-2 edu-period">2015 - 2016</p>
+        </div>
+        <div class="education-box col-lg-6">
+          <img class="edu-icon"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABOFBMVEX////5sjT//f////v4//z55sbxryv///36sTb2szf5sy/+rjr36MnwsyDztDf9sDD3rCD89N375MD///j9rzX+//Xxznn8rSnruEH0u2n/+//97876sDr5//rxukL5tCv22aX/9/L/9ejpvU3//e727MH448nwwGruxGb36MP99OPxu0z206X+rS/8syv8/Or//OPysD3zvFf84qr/79fyy4P99Oz7573wvmHxwnT2tED21Y3+78r52prtsUj0rhLx4q3osSz1sEnrzoXuwl/wzZT20LD2z6Lw3qL49dPovUPytln0zZH23bD/rhXtqkv+7N70w3zy3ZHhuWjhwWTps1v18sTguiT9qkPtxVL52Ifr1pb9zov/v37jtTDpy2P2z2zz1X7l04DbwH///dbjwDvduUj+5+Kpl5OdAAARuklEQVR4nO2di1/ayNrHh5khQ4IQYhhRIFxCBAVNCBJuCorFbanS1d7OXtzu9pw9e/7//+CdgEAIYOu+tW3c/D4fW0wyT55v5vrMTBAEnrrAt3bg0fXPIBS4p6opIZfbLQafnoq7BzPCXQoU/NREAd6NTAmLIAngUxNjKnJTwqACKHpyAjQ4J8QQgacmBLFP6HH5hN6XT+h9+YTel0/offmE3pdP6H35hN6XT+h9+YTel0/offmE3pdP6H35hN6XT+h9+YTel0/offmE3pdP6H35hN6XT+h9+YTel0/offmE3pdP6H35hN6XT+h9fSYh8YJ8wrWELK03yi5aSfl5hN7RgwkJJI0Nr6hYLAYbGJIHEaKkXIx4SUUl+UBCqDTFsHckNpVlhHsJZYg3s4J3lN0EUH4woRDyjoRN/HcIA96RT+gTfv/yCX3CmUKBycHFpvqT9x9fYv8jCLxtQLAtLV/yyT5hkvRRCQOBbNr+l1/UerYOz/zW9VgspicSsUQ4bjvKd3jebVxYMrpCgRAfXX2zL0aY/Skx9tYldmgdoqAnxGim1iq1S6VSazvDcQF2RBTdeSiwC91ml5TQs0sJvzAhFw/UmKelnUWxI52VN9Zj5t7x0UmZyjJCSJaper3ZtVp9Tjx0XRmuLVldVqtUWsr8L0wYELkmkpmrLiHUEheqlmCXukS6lZPYfTGemiVIZr/IUvN40BMXnM12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"
+            alt="">
+          <h3 class="edu-sch-title">International School of Eindhoven</h3>
+          <p class="education-info">Began Middle Years Program</p>
+          <p class="education-info-2 edu-period">2013 - 2015</p>
+        </div>
 
       </div>
 
     </div>
 
-    <hr class="special">
+  </section>
 
-    <p class = "end">I would like to display something more about myself that can't be found on a <a href="https://drive.google.com/file/d/15c1aJQ0Oy1C7u2zjjcf03z3Ehu8mM86-/view?usp=sharing">résumé </a> </p>
+  <!-- Experience  -->
+  <section id="experience" class="experience">
 
-    <footer>
+    <div class="sectionContent">
 
-      <div class="footer-right">
+      <h1 class="sectionTitle">Experience</h1>
 
-      				<a href="https://www.facebook.com/prasiddha.the.awesome"><i class="fab fa-facebook"></i></a>
-      				<a href="mailto:prasiddha.sudhakar@gmail.com"><i class="far fa-envelope"></i></a>
-      				<a href="https://vsco.co/prasiddhaa/images/1"><i class="fa fa-camera-retro"></i></a>
-      				<a href="https://github.com/prasiddha-sudhakar"><i class="fab fa-github"></i></a>
+      <hr class="titleHr">
 
-      			</div>
+      <ul class="list-unstyled">
+        <li class="media">
+          <img class="mr-3 expImg" src="./images/SAHF Peacock.png">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Writer</h5>
+            <h6>South Asian Heritage Forum | August 2020 - present<span class="location-text"><i class="fas fa-map-pin location"></i> Remote</h6></span>
+              <ul>
+                <li class="exp-descrip">Launched digital photography project to document stories of Kashmiri Hindu genocide survivors</li>
+                <li class="exp-descrip">Viral on social media, reaching ~30,000 viewers on multiple platforms within 48 hours</li>
+              </ul>
 
-            <p class = "copyright">Designed by Prasiddha Sudhakar &copy; 2019</p>
+          </div>
+        </li>
 
-    </footer>
+      <ul class="list-unstyled">
+        <li class="media">
+          <img class="mr-3 expImg" src="./images/rtcfellow.jpg">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Fellow</h5>
+            <h6>Rewriting the Code | June 2020 - June 2021<span class="location-text"><i class="fas fa-map-pin location"></i> New York City, USA</h6></span>
+              <ul>
+                <li class="exp-descrip">Selected for competitive year-long fellowship program aimed to improve diversity for women in STEM</li>
+                <li class="exp-descrip">Participated in mentorship program for professional development, educational programming and industry experience </li>
+              </ul>
+
+          </div>
+        </li>
+
+      <ul class="list-unstyled">
+        <li class="media">
+          <img class="mr-3 expImg" src="data:image/jpeg;base64,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">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Software Engineering Intern</h5>
+            <h6>US Department of Health & Human Services | June - August 2020<span class="location-text"><i class="fas fa-map-pin location"></i> Washington D.C, USA</h6></span>
+            <ul>
+              <li class="exp-descrip">Directly contributed to the Medicare Payment System Modernization team</li>
+              <li class="exp-descrip">Built React application to retrieve CMS provider data using the Data.Gov & Web PDS Webpricer APIs</li>
+              <li class="exp-descrip">Incorporated Redux store into application to render variables and manipulate JSON data for storage</li>
+              <li class="exp-descrip">Ran 20+ testcases using Jest, fixed 10+ bugs and leveraged ReCharts for visualization</li>
+            </ul>
+          </div>
+        </li>
+
+      <ul class="list-unstyled">
+        <li class="media">
+          <img class="mr-3 expImg" src="data:image/png;base64,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">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Civic Digital Fellowship</h5>
+            <h6>Coding it Forward | June - August 2020<span class="location-text"><i class="fas fa-map-pin location"></i> Washington D.C, USA</h6></span>
+            <ul>
+              <li class="exp-descrip">Selected as 1 of ~60 Fellows out of 800+ applicants to bring technical skills to the U.S. government</li>
+              <li class="exp-descrip">Matched as Software Engineering Fellow with the U.S. Department of Health and Human Services</li>
+            </ul>
+          </div>
+        </li>
+
+      <ul class="list-unstyled">
+        <li class="media">
+          <img class="mr-3 expImg" src="data:image/png;base64,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">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Sophomore Edge Program</h5>
+            <h6>JP Morgan Chase | April - May 2020<span class="location-text"><i class="fas fa-map-pin location"></i> Texas, USA</h6></span>
+            <ul>
+              <li class="exp-descrip">Selected to take part in JP Morgan's program for Sophomore's interested in Software Engineering</li>
+              <li class="exp-descrip">Take Pause is a VR in healthcare startup company, focusing on reducing anxiety in teenagers.</li>
+            </ul>
+          </div>
+        </li>
+
+      <ul class="list-unstyled">
+        <li class="media">
+          <img class="mr-3 expImg" src="./images/tplog.png">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Software Engineering Intern</h5>
+            <h6>Take Pause | January 2019 - October 2019<span class="location-text"><i class="fas fa-map-pin location"></i> New York City, USA</h6></span>
+            <ul>
+              <li class="exp-descrip">Designed and built Take Pause’s web portal for doctors and patients using React, Redux & AWS SQL</li>
+              <li class="exp-descrip">Launched advanced analytics to view time spent & monitor anxiety and pain levels in patients</li>
+              <li class="exp-descrip">Deployed via AWS, with SQL backend to retrieve patient specific information from API</li>
+              <li class="exp-descrip">Chosen by CEO to demo at the Games for Change Festival, with prominent guests from the UN</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="media my-4">
+          <img class="mr-3 expImg" src="https://upload.wikimedia.org/wikipedia/en/f/f0/Rutgers_University_seal.svg">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Research Assistant</h5>
+            <h6>INFEWS, SEBS | January 2019 - present<span class="location-text"><i class="fas fa-map-pin locationHMT"></i> New Brunswick, USA</span></h6>
+            <ul>
+              <li class="exp-descrip">Researching households’ consumption behaviors that have the greatest impact on food, energy and water (FEW)
+ in order to send incentive-based messages and understand impact on FEW nexus
+</li>
+              <li class="exp-descrip">Built data collection software for research participants using React.js and Flask technologies</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="media my-4">
+          <img class="mr-3 expImg" src="https://res-3.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/zp7t4nehqb61p1hgwjvj">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Economics Taster Program</h5>
+            <h6>University of Warwick | May 2017<span class="location-text"><i class="fas fa-map-pin locationUW"></i> London, UK</span></i></h6>
+            <ul>
+              <li class="exp-descrip">Completed university level coursework in Game Theory, Nash Equilibrium and Behavioral Economics</li>
+              <li class="exp-descrip">Presented analysis of fiscal, monetary & supply side policies for forecasting England's economy</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <h1 class="sectionTitle comSer">Community Service</h1>
+
+      <hr class="titleHr">
+
+      <ul class="list-unstyled">
+
+        <li class="media">
+          <img class="mr-3 expImgU" src="./images/rtcfellow.jpg">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Mentor</h5>
+            <h6>Rewriting the Code | June 2018 - present<span class="location-text"><i class="fas fa-map-pin locationL"></i> New York City, USA</span></i></h6>
+            <ul>
+              <li class="exp-descrip">Assist prospective female students interested in pursuing a career in the technology field</li>
+              <li class="exp-descrip">Helped students transition from high school working environment to college, provided key resources</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="media">
+          <img class="mr-3 expImgU" src="https://www.rumun.net/sites/all/themes/idia/images/idea_footer_logo.png">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Assistant Director </h5>
+            <h6>Institude for Domestic & International Affairs | Sep - Dec 2019<span class="location-text"><i class="fas fa-map-pin locationL"></i> New Brunswick, USA</span></i></h6>
+            <ul>
+              <li class="exp-descrip">Organized Rutgers Model United Nations’ Sri Lankan Council of Ministers for 50+ MUN delegates</li>
+              <li class="exp-descrip">Debriefed policy proposals to facilitate debate regarding pressing issues concerning Sri Lanka </li>
+              <li class="exp-descrip">Moderated 16+ hours of debate on post-civil war development, economic and national security issues</li>
+            </ul>
+          </div>
+        </li>
+
+
+        <li class="media">
+          <img class="mr-3 expImgU" src="https://yt3.ggpht.com/a/AGF-l7-ntD_kj16IS5Tfs3T29H1C_nE9V9NhyQHaFw=s900-c-k-c0xffffffff-no-rj-mo">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Career Fair Liason</h5>
+            <h6>Society of Women Engineerings | October 2019<span class="location-text"><i class="fas fa-map-pin locationL"></i> New Brunswick, USA</span></i></h6>
+            <ul>
+              <li class="exp-descrip">Served as the career fair freshman liason for iConectiv during SWE's annual career fair</li>
+              <li class="exp-descrip">Directed career fair attendees and participants to needed resources on campus</li>
+            </ul>
+          </div>
+        </li>
+        <li class="media my-4">
+          <img class="mr-3 expImgU"
+            src="data:image/jpeg;base64,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">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">USACS Virtual Campus Ambassador</h5>
+            <h6>Rutgers University | Nov 2018 - May 2019<span class="location-text"><i class="fas fa-map-pin locationL"></i> New Brunswick, USA</span></i></h6>
+            <ul>
+              <li class="exp-descrip">Educated students virtually at a local middle school about a college education in Computer Science </li>
+              <li class="exp-descrip">Encouraged participation for underrepresented students in STEM, like women and people of color</li>
+            </ul>
+          </div>
+        </li>
+        <li class="media">
+          <img class="mr-3 expImgU" src="https://upload.wikimedia.org/wikipedia/sco/thumb/a/ad/Imperial_College_London_crest.svg/1200px-Imperial_College_London_crest.svg.png">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Science Fair Volunteer</h5>
+            <h6>Imperial College London | May 2017<span class="location-text"><i class="fas fa-map-pin locationL"></i> London, UK</span></i></h6>
+            <ul>
+              <li class="exp-descrip">Educated participants regarding scientific innovations and displays at annual science fair</li>
+            </ul>
+          </div>
+        </li>
+        <li class="media">
+          <img class="mr-3 expImgU" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQTVsNl2xHwZbPA4BT3yxK01s1uM9uZvy-uAHtVZqMNpK2EpS">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Volunteer</h5>
+            <h6>ALD Life Charity<span class="location-text"><i class="fas fa-map-pin locationL"></i> London, UK</span></i></h6>
+            <ul>
+              <li class="exp-descrip">Volunteered at charity store aiming to raise awareness towards adrenoleukodystrophy (ALD) disease</li>
+              <li class="exp-descrip">Helped in cleaning, reorganizing items and customer service</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+
+    </div>
 
   </section>
 
+  <!-- Skills -->
+  <section id="skills" class="skills">
+
+    <div class="sectionContent">
+
+      <h1 class="sectionTitle">Skills</h1>
+
+      <hr class="titleHr">
+
+      <div class="skillsSection">
+
+        <div class="skills-subtitle">
+          <h3 class="langTitle">Technical Skills</h3>
+        </div>
+
+        <ul class="list-group">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <i class="devicon-java-plain colored skills-icon"></i><span class="skill-text">Java & OOP</span>
+                <span class="badge">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </span>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <i class="devicon-css3-plain colored skills-icon"></i><span class="skill-text">CSS3</span>
+                <span class="badge">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <i class="devicon-html5-plain colored skills-icon"></i><span class="skill-text">HTML5</span>
+                <span class="badge">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <i class="devicon-javascript-plain colored skills-icon"></i><span class="skill-text">JavaScript</span>
+                <span class="badge">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <i class="devicon-jquery-plain colored skills-icon"></i><span class="skill-text">jQuery</span>
+                <span class="badge">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </span>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <img src="./images/python.png" alt="" class="firebase-icon">
+                <span class="skill-text"> Python </span>
+                <span class="badge">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </span>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <i class="devicon-swift-plain colored skills-icon"></i><span class="skill-text">Swift</span>
+                <span class="badge">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </span>
+              </li>
+
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <i class="devicon-nodejs-plain colored skills-icon"></i><span class="skill-text">Node.js</span>
+                <span class="badge">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <i class="devicon-mongodb-plain  colored skills-icon"></i><span class="skill-text">MongoDB</span>
+                <span class="badge">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <i class="devicon-express-original skills-icon express-icon"></i><span class="skill-text">Express.js</span>
+                <span class="badge">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <i class="devicon-react-original colored skills-icon"></i>
+                <span class="skill-text">React</span>
+                <span class="badge">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_0016c93c710cf35990b999cba3a59bae/firebase.png" alt="" class="firebase-icon">
+                <span class="skill-text">Firebase</span>
+                <span class="badge">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </span>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <img src="https://www.r-project.org/Rlogo.png" alt="" class="firebase-icon">
+                <span class="skill-text">     </span>
+                <span class="badge">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </span>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <img src="./images/sql.png" alt="" class="firebase-icon">
+                <span class="skill-text"> SQL </span>
+                <span class="badge">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </span>
+              </li>
+
+            </div>
+          </div>
+        </ul>
+
+
+        <!-- Languages -->
+
+        <div class="skills-subtitle-2">
+          <h3 class="langTitle">Languages</h3>
+        </div>
+
+        <div class="row skills-row lang-row">
+
+          <div class="col-lg-1 langCol">
+            <p class="lang">English</p>
+          </div>
+          <div class="col-lg-11">
+            <div class="progress lang-bar" style="height: 30px;">
+              <div class="progress-bar progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-1 langCol">
+            <p class="lang">தமிழ்</p>
+          </div>
+          <div class="col-lg-11">
+            <div class="progress lang-bar" style="height: 30px;">
+              <div class="progress-bar progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-1 langCol">
+            <p class="lang">Français</p>
+          </div>
+          <div class="col-lg-11">
+            <div class="progress lang-bar" style="height: 30px;">
+              <div class="progress-bar progress-bar rounded-top rounded-bottom" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-1 langCol">
+            <p class="lang dutch">Dutch</p>
+          </div>
+          <div class="col-lg-11">
+            <div class="progress lang-bar" style="height: 30px;">
+              <div class="progress-bar progress-bar rounded-top rounded-bottom" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-1 langCol">
+            <p class="lang">Español</p>
+          </div>
+          <div class="col-lg-11">
+            <div class="progress lang-bar" style="height: 30px;">
+              <div class="progress-bar progress-bar rounded-top rounded-bottom" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+
+    <div class="sectionContent">
+
+      <h1 class="sectionTitle">Projects</h1>
+
+      <hr class="titleHr">
+
+      <div class="techProjects">
+        <h2 class="subtitle">Tech</h2>
+        <hr class="underline">
+
+        <div class="card-deck">
+
+          <div class="card bg-dark">
+            <img class="card-img-top" src=".\images\hometrackerpic.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Home Tracker</h5>
+              <p class="card-text">Data collection software for INFEWS research project, includes login system and Firebase backend to collect & store user data.</p>
+
+            </div>
+
+            <div class="card-footer">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Firebase</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Machine Learning</span>
+            </div>
+          </div>
+
+        <div class="card bg-dark">
+              <img class="card-img-top" src=".\images\dagre.png" alt="Card image cap">
+              <div class="card-body">
+                        <h5 class="card-title">DAGRE London Housing</h5>
+                        <p class="card-text">
+                          <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#dagreModal">Learn More</button>
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <span class="project-tag">Java</span>
+                        <span class="project-tag">Javascript</span>
+                        <span class="project-tag">JSP</span>
+                        <span class="project-tag">Servlet</span>
+                        <span class="project-tag">HTML5</span>
+                        <span class="project-tag">CSS3</span>
+                        <a href="https://github.com/prasiddha-sudhakar/DAGRE-London-Properties"><i class="fab fa-github"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="card bg-dark">
+                      <img class="card-img-top" src=".\images\starwarshangman.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Star Wars Themed Hangman</h5>
+                        <p class="card-text">Created visual star wars themed hangman game using Java Window builder and GUI</p>
+                      </div>
+                      <div class="card-footer">
+                        <span class="project-tag">Java</span>
+                        <span class="project-tag">Window Builder</span>
+                        <span class="project-tag">GUI</span>
+                        <br />
+                        <a href="https://github.com/prasiddha-sudhakar/Star-Wars-Themed-Hangman"><i class="fab fa-github"></i></a>
+                      </div>
+                    </div>
+        </div>
+
+      </div>
+
+      <div class="modal fade" id="dagreModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content bg-dark">
+  <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">DAGRE London Housing</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    Designed a website for my IB Computer Science Higher Level Internal Assessment which searches for properties in
+London and handles queries. HTML and CSS were used for Frontend, and Java and JavaScript for Backend
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-info" data-dismiss="modal">Close</button>
+  </div>
+</div>
+</div>
+</div>
+
+      <div class="techProjects">
+        <h2 class="subtitle">Papers</h2>
+        <hr class="underline">
+
+        <div class="card-deck">
+
+          <div class="card bg-dark">
+            <div class="card-body">
+              <h5 class="card-title">Digital Citizenship</h5>
+              <p class="card-text">Final project for Scientific and Technical writing class, describing the urgent need for digital citizenhip in middle schools using cost-benefit analysis.</p>
+            </div>
+            <div class="card-footer">
+              <span class="project-tag">History</span>
+              <span class="project-tag">Politics</span>
+              <i class="fab fa-google-drive"></i>
+            </div>
+          </div>
+
+          <div class="card bg-dark">
+            <div class="card-body">
+              <h5 class="card-title">Artificial Intelligence in Autonomous Cars</h5>
+              <p class="card-text">Co-authored an investigative research paper regarding the use of artificial intelligence in autonomous vehicles.</p>
+            </div>
+            <div class="card-footer">
+              <span class="project-tag">AI</span>
+              <span class="project-tag">Computer Science</span>
+              <a href="https://docs.google.com/document/d/12WffeA_IacjSavhI12n48anIHTDZAUTGOghbgYFCSdg/edit?usp=sharing"><i class="fab fa-google-drive"></i></a>
+            </div>
+          </div>
+
+          <div class="card bg-dark">
+            <div class="card-body">
+              <h5 class="card-title">Geopolitics of Jammu and Kashmir</h5>
+              <p class="card-text">Evaluating to what extent the Kashmir conflict plays a role in the political relationship between India and Pakistan.</p>
+            </div>
+            <div class="card-footer">
+              <span class="project-tag">History</span>
+              <span class="project-tag">Politics</span>
+              <a href="https://drive.google.com/file/d/1Hr9SjrqQDYhoKcqTNbiJe-1n5Mpf5BYe/view?usp=sharing"><i class="fab fa-google-drive"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Interests -->
+  <section id="interests" class="interests">
+
+    <div class="sectionContent">
+
+      <h1 class="sectionTitle">Interests</h1>
+
+
+      <div class="media">
+  <i class="fas fa-book-reader fa-7x"></i>
+  <div class="media-body activitydescrip">
+    <h5 class="mt-0">Reading</h5>
+  I enjoy reading about geopolitics, history and crime thrillers (fiction). One of my favorite books is the b
+  <b><i>Infidel Next Book</i></b> by Dr Rajat Mitra,
+  descriping the geopolitical conflict in Kashmir from the eyes of a young child. I also particularily enjoyed <b><i>The Avenger</i></b> by Frederick Forsyth,
+  revolving around the Yugoslav Wars.
+  </div>
+</div>
+
+<div class="media">
+  <div class="media-body">
+    <h5 class="mt-0 mb-1">Music</h5>
+    I've always found my sense of calm in music - whether it was performing in <i>TOP Veldhoven </i>, <i>Carnegie Hall</i>, Open Days at <i>DGS</i> or <i>Lewisham Sivan Kovil</i>, I've enjoyed the peaceful feeling that music has given to me.
+  </div>
+  <i class="fas fa-music fa-7x"></i>
+</div>
+
+<div class="media">
+<i class="fas fa-route fa-7x"></i>
+<div class="media-body activitydescrip">
+<h5 class="mt-0">Travel</h5>
+After growing up moving around the world, living in 6 different countries and attending 3 different high schools, I've learned to appreciate diversty of thought, languages, cultures and traditions. I aim to visit all 195 countries by the end of my lifetime
+<i class="fas fa-running"></i>  <i class="fas fa-map-marked"></i>
+</div>
+</div>
+
+<hr>
+
+      <p>Finally, I would like to say thank you to my parents for making me the person I am and giving me the opportunities I have.</p>
+      <img src=".\images\prasbaby.jpg" alt="">
+      <i class="fas fa-arrow-right"></i>
+      <img src=".\images\famOld.jpg" class="newfampic" alt="">
+
+    </div>
+
+  </section>
+
+  <!-- </div> -->
+
+
+  <footer>
+    <section id="footer" class="footer">
+
+      <a href="https://www.linkedin.com/in/prasiddha-sudhakar/" target="_blank"><i class="social-icon fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/prasiddha-sudhakar" target="_blank"><i class="social-icon fab fa-github"></i></a>
+      <a href="https://www.facebook.com/prasiddha.the.awesome" target="_blank"><i class="fab fa-facebook-f social-icon"></i></a>
+      <a href="https://vsco.co/prasiddhaa/images/1"><i class="fa fa-camera-retro social-icon"></i></a>
+      <a href="https://www.goodreads.com/user/show/103993866-prasiddha-sudhakar"><i class="fas fa-book-reader social-icon"></i></a>
+      <p>© Copyright 2019 Prasiddha Sudhakar</p>
+      <a href="mailto:prasiddha.sudhakar@gmail.com"><button type="button" class="btn btn-outline-info">Contact me</button></a>
+
+    </section>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/index.js" charset="utf-8"></script>
+
+  <script src="./js/index.js" charset="utf-8"></script>
 
 </body>
 
