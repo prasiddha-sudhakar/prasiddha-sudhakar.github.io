@@ -1,0 +1,47 @@
+/* General CSS */
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  overflow-x: hidden;
+  padding: 3% 12%;
+}
+
+.backToHome{
+  left: 2%;
+  top: 2%;
+  font-size: 1rem;
+  position: absolute;
+}
+
+.title {
+  text-align: center;
+  margin: 8% 0%;
+  font-size: 3rem;
+  margin-bottom: 1%;
+}
+
+.backToHome i, h4{
+  color: black;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.log-example{
+  padding: 3% 0%;
+}
+
+.econDiagram{
+  margin: 3% 0%;
+}
+
+.exampleTable{
+  margin: 0% 22%;
+  text-align: center;
+}
+
+.teamCalc{
+  margin: 3% 0%;
+  padding: 4%;
+  border-style: solid;
+}

@@ -1,0 +1,28 @@
+/* General CSS */
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  overflow-x: hidden;
+  padding: 3% 10%;
+}
+
+.backToHome{
+  left: 2%;
+  top: 2%;
+  font-size: 1rem;
+  position: absolute;
+}
+
+.title {
+  text-align: center;
+  padding: 2% 0%;
+  font-size: 3rem;
+  padding-bottom: 0%;
+}
+
+.backToHome i, h4{
+  color: black;
+}
+
+.underline{
+  text-decoration: underline;
+}
