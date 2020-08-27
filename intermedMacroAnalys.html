@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Personal Website</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href=".\css\intermedMacro.css">
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  <!-- Importing the Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images\apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images\favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images\favicon-16x16.png">
+  <link rel="manifest" href="\images\site.webmanifest">
+  <link rel='shortcut icon' type='image/x-icon' href='images\favicon.ico' />
+
+  <!-- Importing the Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images\apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images\favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images\favicon-16x16.png">
+  <link rel="manifest" href="\images\site.webmanifest">
+  <link rel='shortcut icon' type='image/x-icon' href='images\favicon.ico' />
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <div class="backToHome">
+    <a href="index.html">
+      <h4><i class="fas fa-home"></i> <i class="fas fa-angle-left"></i> Back to main</h4>
+    </a>
+    <a href="myCoursework.html">
+      <h4><i class="fas fa-bookmark"></i> <i class="fas fa-angle-left"></i> Back to coursework</h4>
+    </a>
+  </div>
+
+  <h1 class="title">Intermediate Macroeconomic Analysis</h1>
+  <hr>
+  <!-- Lecture 1 -->
+  <h2 class="underline">Lecture 1: 04/09/19</h2>
+  <p>What we did in lecture today mainly consisted of going through concepts from <a href="economics.css"> macroeconomics</a></p>
+  <p>But other than macro recap, we learned:</p>
+
+  <h4>Logarithms</h4>
+  <p>Using logarithms (In this case, of log(GDP)) are useful, as we will be able to see the whether GDP is increasing, decreasing or constant over time</p>
+
+  <ol>
+
+    <li>
+      <div class="log-example">
+        Growth rate of logarithms
+        <br>
+        Let's say that we have an economy that grows at rate y from t-1 to t
+
+        <p class="math">
+          \[y = { y_{t} - y_{t-1} \over \ y_{t-1} }\]
+        </p>
+
+        We can now simplify this whole thing:
+
+        <p class="math">
+          \[1+y = { y_{t} \over \ y_{t-1} }\]
+        </p>
+
+        Recall that log(1+x) = x
+        <br>
+        We cam use this rule here:
+
+        log(yt/yt-1) = y
+
+        Which is the same as saying
+
+        log(yt) - log(yt-1) ≈ y
+
+      </div>
+    </li>
+
+    <li>
+      <div class="log-example">
+        Average growth and logarithms
+
+        <br>
+        Now, let's assume that we have an increase in GDP by 2% each year and the economy is currently (Yo) producing 100 units of real output
+
+        <p class="math">
+          \[{{ y_{t} -  y_{t-1} \over \ y_{t-1}} = 0.02}\]
+        </p>
+        So that:
+
+        <p class="math">
+          \[{{ y_{t}} = 1.02 * y_{t-1}}\]
+        </p>
+
+        We can use this information to calculate the GDP in years to come, as we have found that overall, the formula is:
+
+        <p class="math">
+          \[{{ y_{t}} = (1.02)^{t} y_{0}}\]
+        </p>
+
+        After taking the logarithm of both sides, we get:
+
+        log(yt) = log(Yo) + log(1.02)^t
+
+        <br>
+
+        We can see that this is a the equation of a straight line, and that average growth is constant
+
+      </div>
+    </li>
+
+  </ol>
+
+  <h4>Analyzing growth rate in the US</h4>
+  <ul>
+    <li>The trend (growth)</li>
+    <li>Wiggles (business cycle)</li>
+  </ul>
+
+  <h5>Deviations</h5>
+  <ul>
+    <li>Temporary - business cycle</li>
+    <li>Long lasting - growth issue</li>
+  </ul>
+
+  <h4>Systematic Process</h4>
+  <ul>
+    <li>Measurement -> What's the relevant data?</li>
+    <li>Modeling -> How do the relevant economic forces interact?</li>
+    <li>Results -> How do we use our models to answer questions?</li>
+  </ul>
+
+  <!-- Lecture 2 -->
+  <h2 class="underline">Lecture 2: 09/09/19</h2>
+
+  <p>Today, we looked at measuring output, inflation and labor market activity</p>
+  <p>For labor market activity, we will be looking more closely at:</p>
+  <ul>
+    <li>3 key measures of measuring labor market activity</li>
+    <li>Dynamics of unemployment</li>
+    <li>Natural rate of unemployment</li>
+  </ul>
+
+  <h3 class="underline">Measuring economic activity</h3>
+  <p>After seeing the 1930 Great Depression, countries realized that they need <i>National Income Accounting</i></p>
+
+  <h5 class="underline">How would we measure total output in the US in 2018?</h5>
+
+  <p>There are 3 main approaches:</p>
+
+  <ol>
+    <li>Production Approach</li>
+    <li>Expenditure Approach</li>
+    <li>Income Approach</li>
+  </ol>
+
+  <p>All notes for this can be found <a href="economics.html">here</a></p>
+
+  <p>And we looked at Nominal vs Real GDP</p>
+
+  <h3 class="underline">Measuring inflation</h3>
+
+  <h5 class="underline">PCE Inflation - Personal Consumption Expenditure</h5>
+
+  <p class="math">
+    \[\text{PCE Price Index} = {100 * {\text{PCE 2018 with 2018 prices} \over \text{PCE 2017 with 2017 prices}}} \]
+  </p>
+
+  <!-- Lecture 3 -->
+  <h2 class="underline">Lecture 3: 11/09/19</h2>
+
+  <h3 class="underline">Inflation</h3>
+
+  <ul>
+    <li>PCE inflation</li>
+    <li>
+      Core inflation
+      <ul>
+        <li>This contains the food and energy prices, which is not included in the standard measure of inflation.<br> This is because these prices are <b>volatile</b> and always fluctuating
+        </li>
+      </ul>
+    </li>
+    <li>Consumer price index</li>
+  </ul>
+
+  <h4 class="underline">A general rule of thumb</h4>
+
+  <div class="alert alert-warning" role="alert">
+    % change in (a*b) = (%change in a) + (%change in b)
+  </div>
+
+  <p>Hence:</p>
+
+  <div class="alert alert-warning" role="alert">
+    Growth rate of nominal GDP: Inflation rate + growth rate of real GDP
+  </div>
+
+  <h3 class="underline">Measuring labor market activity</h3>
+
+  <ul>
+    <li>
+      <b>m%</b>: Unemployed workers who find jobs [NU]
+    </li>
+    <li>
+      <b>s%</b>: Employed workers who lose their jobs [NE]
+    </li>
+    <li>
+      <b>Constant</b> size of labor force (for simplicity in calculations!)
+    </li>
+  </ul>
+
+  <p class="math">
+    \[{m * {\text{NU} \over \text{NU + NE}}} = {s * {\text{NE} \over \text{NU + NE}}} \]
+  </p>
+
+  <p>So...</p>
+
+  <p class="math">
+    \[\text{Natural Rate of Unemployment} = {s \over m + s} \]
+  </p>
+
+  <p>This shwos that the natural rate of unemployment depends on the rate of finding and losing jobs</p>
+
+  <!-- Lecture 4 -->
+  <h2 class="underline">Lecture 4: 16/09/19</h2>
+
+  <h3 class="underline">Reasons for change in Natural Unemployment rate</h3>
+
+  <ul>
+    <li>Young workers can change jobs more easily than older ones</li>
+    <li>Baby boomers entering the workforce
+      <ul>
+        <li>If they all begin to retire around the same time, Un will decrease</li>
+        <li>Less people enter the labor force</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3 class="underline">Composition of the labor force</h3>
+
+  <p>Let's say these two following things happen:</p>
+
+  <ul>
+    <li><i class="fas fa-arrow-up"></i> in the % of working population in jail </li>
+    <li><i class="fas fa-arrow-up"></i> in the % of people with disability insurance </li>
+  </ul>
+
+  <p>What would happen to the labor force?</p>
+
+  <p>This would actually make the pool of remaining unemployed workers more employable</p>
+
+  <h3 class="underline">Aggregate Production and Productivity</h3>
+  <h4 class="underline">Measuring Productivity</h4>
+  <p>This is done by measuring which country can produce more output from given input</p>
+  <p><i class="fas fa-arrow-right"></i> Also known as the production function</p>
+
+  <h4 class="underline">Production Function</h4>
+  <p class="math">
+    \[ Y = F(k, l) \]
+  </p>
+
+  <p>Where: </p>
+
+  <ul>
+    <li>
+      <b>Y</b>: Output
+    </li>
+    <li>
+      <b>K</b>: Capital
+    </li>
+    <li>
+      <b>L</b>: Labor
+    </li>
+  </ul>
+
+  <p>Let's take a look at the <i>Cobb Douglas</i> production function</p>
+
+  <p class="math">
+    \[ F(k, l) = Ak^bL^{1-b} \]
+  </p>
+
+  <p>Where: </p>
+
+  <ul>
+    <li>
+      <b>a</b>: Elasticity
+    </li>
+    <li>
+      <b>b</b>: <i>Total Factor Productivity</i>
+      <ul>
+        <i class="fas fa-arrow-right"></i> How much output is created for given input k & l
+    </li>
+  </ul>
+  </li>
+  </ul>
+
+  <p>Let's say as an example, what would happen if we double both K and L? </p>
+
+  <p>We would have to substitute K with 2K and L with 2L</p>
+  <p>This would end up giving us: </p>
+
+  <p class="math">
+    \[ 2F(K, L) \]
+  </p>
+
+  <p>What does it tell us about the output? It <b>doubles</b></p>
+  <p><i class="fas fa-arrow-right"></i> Giving us <b>constant returns to scale</b></p>
+
+  <p>To find output per worker, we can rearrange the equation to get:</p>
+
+  <p class="math">
+    \[ Y = A (\frac{ K }{ L })^b \]
+  </p>
+
+  <p>Giving us: </p>
+
+  <p class="math">
+    \[ y = \frac{ Y }{ L }\]
+  </p>
+
+  <p class="math">
+    \[ k = \frac{ K }{ L }\]
+  </p>
+
+  <p>To get the per worker production function, it would be: </p>
+
+  <p class="math">
+    \[ y = Ak^b\]
+  </p>
+
+  <div class="econDiagram">
+    <img src=".\images\economics\perworkerproductionfunction.png" alt="">
+  </div>
+
+  <h4><span class="badge badge-warning">Example</span></h4>
+
+  <p>In this example, we're going to find out which team is more productive</p>
+
+  <div class="exampleTable">
+    <table class="table">
+      <thead class="thead">
+        <tr>
+          <th scope="col">Team</th>
+          <th scope="col">Miles</th>
+          <th scope="col">Machinery</th>
+          <th scope="col">Members</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>90</td>
+          <td>$30 million</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>90</td>
+          <td>$40 million</td>
+          <td>10</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>We would need to use the equation:</p>
+
+  <p class="math">
+    \[ F(k, l) = Ak^bL^{1-b} \]
+  </p>
+
+  <p>We can assume that the <b>b</b> value is the same for both, but the <b>A</b> values are different</p>
+
+  <h5 class="underline">Steps to find A for both teams</h5>
+  <p>Use the equation: </p>
+
+  <p class="math">
+    \[ y = Ak^b\]
+  </p>
+
+  <p>To find the production function per worker</p>
+
+  <p>Where: </p>
+
+  <!-- Team 1 -->
+  <div class="teamCalc">
+    <h4 class="underline">Team 1:</h4>
+
+    <p class="math">
+      \[ Y = 90 \text{ miles} \]
+      \[ K = $30 \text{ million} \]
+      \[ L = 30 \text{ workers} \]
+    </p>
+
+    <p class="math">
+      \[ y = \frac{ Y }{ L } = \frac{ 90 }{ 30 } = 3 \text{ miles per worker}\]
+    </p>
+
+    <p class="math">
+      \[ k = \frac{ K }{ L } = \frac{ 30 }{ 30 } = 1 \text{ million dollars per worker} \]
+    </p>
+  </div>
+
+  <!-- Team 2 -->
+  <div class="teamCalc">
+    <h4 class="underline">Team 2:</h4>
+
+    <p class="math">
+      \[ Y = 90 \text{ miles} \]
+      \[ K = $40 \text{ million} \]
+      \[ L = 10 \text{ workers} \]
+    </p>
+
+    <p class="math">
+      \[ y = \frac{ Y }{ L } = \frac{ 90 }{ 10 } = 9 \text{ miles per worker}\]
+    </p>
+
+    <p class="math">
+      \[ k = \frac{ K }{ L } = \frac{ 40 }{ 10 } = 4 \text{ million dollars per worker} \]
+    </p>
+  </div>
+
+  <h6>We can rearrange the production function per worker to get <b>A</b> for both teams</h6>
+
+  <p class="math">
+    \[ A = \frac{ y }{ k^b }\]
+  </p>
+
+  <p>Let's assume that the <b>b</b> is given to us as 0.5</p>
+  <p>So: </p>
+
+  <p class="math">
+    \[ A_1 = \frac{ 3 }{ 1^{0.5} } = 3\]
+  </p>
+
+  <p class="math">
+    \[ A_2 = \frac{ 9 }{ 4^{0.5} } = 4.5\]
+  </p>
+
+  <h4><span class="badge badge-warning">Answer: Team 2 is more productive</span></h4>
+
+  <p>To analyze further, we can rewrite the equation(s) in this manner</p>
+
+  <p class="math">
+    \[ \frac{ y_1 }{ y_2 } = \frac{ A_1 }{ A_2 } \frac{ {k_1}^b }{ {k_2}^b }\]
+  </p>
+
+  <p class="math">
+    \[ \frac{ 3 }{ 9 } = \frac{ 3 }{ 4.5 } \frac{ 1 }{ 2 }\]
+  </p>
+
+  <p class="math">
+    \[ (0.33) = (0.67)(0.5)\]
+  </p>
+
+  <p>Where: </p>
+  <p><i class="fas fa-road"></i> Team 1 made only 33% miles per member as Team 2</p>
+  <p><i class="far fa-hdd"></i> This would be because they only had 50% as much 'effective capital input'</p>
+  <p><i class="fas fa-user-clock"></i> and they were only 67% as productive as Team 2</p>
+
+  <p>What we have seen so far is mostly in terms of Microeconomics. Let's now put everything into Macro terms.</p>
+
+  <ul>
+    <li>
+      <b>Y</b>: GDP
+    </li>
+    <li>
+      <b>K</b>: Total value of all Capital
+    </li>
+    <li>
+      <b>L</b>: Labor Force
+    </li>
+  </ul>
+
+  <h3 class="underline">Factor Prices and Income Shares</h3>
+
+  <div class="exampleTable">
+    <table class="table">
+      <thead class="thead">
+        <tr>
+          <th scope="col">Markets for K and L</th>
+          <th scope="col">Maximize until:</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hire worker <i class="fas fa-arrow-right"></i> Pay Wage (W)</td>
+          <td>MPL = W</td>
+        </tr>
+        <tr>
+          <td>Rent Capital <i class="fas fa-arrow-right"></i> Pay Rental Rate</td>
+          <td>MPK = R</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h5 class="underline">Total Labor Income</h5>
+
+  <p class="math">
+    \[ W \times L = MPL \times L \]
+  </p>
+
+  <p class="math">
+    \[ = (1-b) \frac{ Y }{ L } * L \]
+  </p>
+
+  <p class="math">
+    \[ = (1-b)Y \]
+  </p>
+
+  <h5 class="underline">Total Capital Income</h5>
+
+  <p class="math">
+    \[ R \times K = MPK \times K \]
+  </p>
+
+  <p class="math">
+    \[ = b \frac{ Y }{ K } * K \]
+  </p>
+
+  <p class="math">
+    \[ = bY \]
+  </p>
+
+  <h4 class="underline">Supply Shocks</h4>
+
+  <p>So, what is a supply shock?</p>
+  <p>
+    A<b> supply shock </b>is anything that impacts the Total Factor Productivity
+  </p>
+
+  <p>Examples are: </p>
+  <ul>
+    <li>Positive technological advance <i class="fas fa-arrow-right"></i> more productive capital</li>
+    <li>Weather related <i class="fas fa-arrow-right"></i> potential damage done to capital, making it less productive</li>
+    <li>Fluctuating energy prices</li>
+  </ul>
+
+  <p>We are now going to see how we can see how supply shocks affect output and our factors of production</p>
+
+  <p>We are going to be holding K and L constant</p>
+
+  <p class="math">
+    \[ Y = AK^bL^{1-b} \]
+  </p>
+
+  <p>So if A <i class="fas fa-arrow-down"></i>, Y will <i class="fas fa-arrow-down"></i> (holding K and L constant)</p>
+
+  <p class="math">
+    \[MPL = (1-b) \frac{ Y }{ L } \]
+  </p>
+
+  <p class="math">
+    \[ MPK = b \frac{ Y }{ K } \]
+  </p>
+
+  <p>So both MPL and MPK will <i class="fas fa-arrow-down"></i></p>
+  <p>As MPL = W, Wages will also <i class="fas fa-arrow-down"></i></p>
+
+  <!-- Lecture 5/6 -->
+  <h2 class="underline">Lecture 5/6: 23/09/19</h2>
+
+  <h3 class="underline">Setting up the Sollow Model</h3>
+
+  <p class="math">
+    \[ Y = A_tK_t^bL_t^{1-b} \]
+  </p>
+
+  <p>Where the t subscript can denote the <i>time</i></p>
+
+  <p>We can also assume that A and L are <i>constant</i> and there is no government expenditure</p>
+
+  <h5 class="underline">Per worker variables</h5>
+
+  <p>We know that: </p>
+
+  <p class="math">
+    \[ y_t = \frac{ Y_t }{ L_t }\]
+  </p>
+
+  <p class="math">
+    \[ k_t = \frac{ K_t }{ L_t }\]
+  </p>
+
+  <p>We can also define: </p>
+
+  <p class="math">
+    \[ c_t = \frac{ C_t }{ L_t }\]
+  </p>
+
+  <p class="math">
+    \[ i_t = \frac{ I_t }{ L_t }\]
+  </p>
+
+  <p>We've also assumed a <b>closed economy</b> where there is <i>no government spending</i> and <i>net exports</i> = 0</p>
+
+  <p class="math">
+    \[ y_t = c_t + i_t\]
+  </p>
+
+  <p>There are some other factors that we need to consider: </p>
+
+  <p>That a fraction of output is saved in each period</p>
+
+  <p class="math">
+    \[ i_t = sy_t = sA{k_t}^b\]
+  </p>
+
+  <p>And that a fraction of machines wear out each month. This is denoted with δ</p>
+
+  <p class="math">
+    \[ d_t = δk_t\]
+  </p>
+
+  <p>Evolution of capital stock:</p>
+
+  <p class="math">
+    \[ Δk_t = i_t - d_t\]
+  </p>
+
+  <p>Where: </p>
+
+  <p class="math">
+    \[ k_t = \text{ change in capital per worker}\]
+  </p>
+
+  <p class="math">
+    \[ i_t = \text{ investment per worker}\]
+  </p>
+
+  <p class="math">
+    \[ d_t = \text{ depreciation per worker}\]
+  </p>
+
+  <p>We should be able to use the Solow model to predict outcomes. First, let's visualize this graphically</p>
+
+  <p>Start by plotting these curves:</p>
+
+  <p class="math">
+    \[ y_t = A{k_t}^b\]
+  </p>
+
+  <p class="math">
+    \[ i_t = sA{k_t}^b\]
+  </p>
+
+  <p class="math">
+    \[ d_t = δ{k_t}\]
+  </p>
+
+  <p class="math">
+    \[ \text{If: }sA{k_t}^b = δ{k_t}\]
+  </p>
+
+  <p class="math">
+    \[ k^* = ({ sA \over δ})^{1 \over 1-b}\]
+  </p>
+
+  <p>This is also known as the <b>steady state capital-labor ratio</b></p>
+
+  <p>When the kt is small, output and investment are high (See Graph) and depreciation is low</p>
+
+  <p>When the kt is large, capital becomes less productive due to diminishing marginal returns</p>
+
+  <p>Keep in mind that y* - i* = c*</p>
+
+  <p>Where c* is consumption per worker</p>
+
+  <p>Output per worker converges to y* = A(k*)^b</p>
+  <p>Consumption per worker converges to c* = (1-s)y*</p>
+
+  <h4>Implications</h4>
+
+  <p>If A is constant, growth will eventually stop due to diminishing marginal returns</p>
+  <p>And if economies are under their 'steady state' will grow faster than usual and converge to their steady state</p>
+
+  <h5>Reasons for converging</h5>
+
+  <p>Simple: Law of diminishing returns</p>
+  <p>As the economy grows, depreciation increases faster than output and investment -> Economy eventually reaches a new steady state</p>
+
+  <p>However, this whole time we haven't considered what would happen if there were an increase in <b> labor force </b></p>
+
+  <h4>Population growth in the Solow model</h4>
+
+  <p>Our new dt equation would look like this:</p>
+
+  <p class="math">
+    \[ d_t = (δ+n){k_t}\]
+  </p>
+
+  <p>When considering y* and k*, we need to make sure that Yt and Kt are growing at the same rate as Lt</p>
+
+  <p>Our new equation to find k* would now be: </p>
+
+  <p class="math">
+    \[ k^* = ({ sA \over δ + n})^{1 \over 1-b}\]
+  </p>
+
+  <p>This proves that: </p>
+
+  <ul>
+    <li>A higher n would lead to a decrease in k</li>
+    <li>To compensate for a higher n, we would need to increase s</li>
+  </ul>
+
+  <h4>Fundamentally... </h4>
+
+  <p>The Solow Model predicts that as the number of workers increase, there are fewer machines per worker and each worker produces less</p>
+
+  <p>However, the issue is, is that the Solow Model only considers workers in terms of capital instead of new technologies and ideas that they may bring</p>
+
+<h2 class="underline">Lecture 7: 25/09/19</h2>
+  <h3>Higher Productivity</h3>
+
+  <p>What happens to k and y when A increases?</p>
+
+  <p><i class="fas fa-arrow-up"></i> in output per worker (yt) > than the increase in A</p>
+
+  <p>We know that k* increases, so this increase in output is amplified by a higher amount of capital</p>
+
+  <h3>Growth Accounting</h3>
+
+  <p>This is done to measure <i>where</i> the economic growth is coming from</p>
+
+  <p>Let's revise our Aggregate Production Function</p>
+
+  <p class="math">
+    \[ Y_t = {A_t}{k_t}^b{L_t}^{1-b} \]
+  </p>
+
+  <p>At the moment, we want to formulate a relationship between our inputs and outputs</p>
+
+  <p>Formula: </p>
+
+  <p class="math">
+    \[ g_yt = g_At + bg_Kt + (1-b)g_Lt \]
+  </p>
+
+  <p>We got this from using natural logarithms. Here's how we got there:</p>
+
+  <p class="math">
+    \[ ln(Y_t) - ln(Y_t-1) = (ln(A_t) - ln(A_t-1)) + b(ln(K_t) - ln(K_t-1)) + (1-b)(ln(L_t) - ln(L_t-1)) \]
+  </p>
+
+  <p>ga is also known as the <i>Solow Residual</i> as this is not explained by an increase in capital or labor</p>
+
+  <h3>The role of TFP growth in Solow model</h3>
+
+  <p>If TFP does not grow, the country’s real GDP per capita
+will eventually stop growing </p>
+
+<p>If Total Factor Productivity (TFP) grows at rate gA then we can find the GDP per capita growth rate by:</p>
+
+<p class="math">
+  \[ g_y =  ({ 1 \over 1 - b})g_A \]
+</p>
+
+<p>𝑦∗ can only grow in the long run if 𝐴 continually increases</p>
+
+<h4>Components of TFP [A]</h4>
+
+<h5>Technology + Ideas</h5>
+
+<p>Ideas are <b>non-excludable</b> and <b>non-rival</b></p>
+
+<h5>Adoption of ideas</h5>
+
+<p>If Ac is the productivity at a certain point in time</p>
+
+<p class="math">
+  \[ A = γA_c \]
+</p>
+
+<p>Where γ represents a countries <i>adoptive efficiencies</i> - how quickly a country can adopt new technologies</p>
+
+  <!-- Javascripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src=".\js\economics.js" charset="utf-8"></script>
+
+</body>
+
+</html>
